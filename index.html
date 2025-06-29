@@ -49,65 +49,66 @@
       </ul>
     </section>
 
-    <section>
-      <h2>👥 Leadership & Organizations</h2>
+    <details open>
+      <summary><h2>👥 Leadership & Organizations</h2></summary>
       <ul>
         <li><strong>Founder, Data Science Initiative @ SDSU</strong><br />
-          Created SDSU’s first student-run data science org, leading events, mentorship, and community building for 100+ students across disciplines.
+          Created SDSU’s first student-run data science org, leading events, mentorship, and community building for 130+ STEM majors across disciplines.
         </li>
         <li><strong>Co-Founder, GrowLuv SDSU Chapter</strong><br />
-          Brought a national mental wellness initiative to SDSU, focusing on care, vulnerability, and student connection through community-led projects.
+          Brought a national mental wellness initiative to SDSU for 50+ students, focusing on care, vulnerability, and student connection through community-led projects.
         </li>
         <li><strong>Co-Founder, Climate Café SDSU</strong><br />
-          Built a student-led space for climate-focused conversations, emotional reflection, and action rooted in sustainability and care.
+          Built student-led space for climate-focused conversations, emotional reflection, and action rooted in sustainability and care with 30+ students.
         </li>
         <li><strong>Co-Founder, SDSU Book Club</strong><br />
-          Created a campus-wide reading community centered on diverse voices, personal growth, and open discussion beyond the classroom.
+          Created the foundation of a campus-wide reading community centered on diverse voices, personal growth, and open discussion beyond the classroom for 140+ book readers.
         </li>
         <li><strong>President, Society of Statisticians & Actuaries</strong><br />
-          Revitalized a dormant org with resume reviews, industry panels, and student-friendly stats resources.
+          Led an org for 180+ statiscians and actuaries with resume reviews, industry panels, and student-friendly stats resources.
         </li>
       </ul>
-    </section>
-    
+    </details>
 
-    <section>
-      <h2>📚 Presentations & Publications</h2>
+    <details open>
+      <summary><h2>📚 Presentations & Publications</h2></summary>
       <ul>
-        <li><strong>AAS 247 Poster (Upcoming)</strong><br />
-          Presenting variable star classification research with Rubin Observatory data in January 2026.
+        <li><strong>AAS 247 Conference Presentation (Upcoming)</strong><br />
+          Presenting variable star classification research with Rubin Observatory data in 2026.
         </li>
         <li><strong>Astrobites Article (Planned)</strong><br />
-          Writing a piece demystifying data science in astronomy for undergraduates, based on my Rubin internship experience.
+          Writing a piece demonstrating data science in astronomy for undergraduates, based on my Rubin internship experience.
         </li>
         <li><strong>CDC COVID-19 Dashboard (Pending)</strong><br />
           Awaiting publication updates from the team at the CDC; contributed to standardizing global SARS-CoV-2 data pipelines.
         </li>
       </ul>
-    </section>
+    </details>
 
-    <section>
-      <h2>🌟 Why I Do This</h2>
-      <p>
-        
-      </p>
-    </section>
-
-    <section>
-      <h2>🌟 Why I Do This</h2>
+    <details open>
+      <summary><h2>🌟 Why I Do This</h2></summary>
       <p>
         I didn’t grow up wanting to be a data scientist. When I was choosing a major, it came down to business or data science and honestly, I just picked what sounded more interesting at the time. It felt random, but I went with it.
       </p>
       <p>
         Looking back, that choice changed everything. I realized I love making sense of things most people overlook. Turning complex problems into something clear and useful, it just clicked for me. Data science became more than my major; it became the way I want to build, lead, and create impact no matter where I go.
       </p>
-    </section>
-    
-    
+    </details>
 
     <footer>
       &copy; 2025 McAelan Remigio — All rights reserved.
     </footer>
   </main>
+
+  <button id="topBtn" title="Back to Top">↑</button>
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+      topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    topBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
 </body>
 </html>
