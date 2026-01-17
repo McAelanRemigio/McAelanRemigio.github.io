@@ -11,6 +11,7 @@
 
 *{ box-sizing: border-box; }
 html,body{ height:100%; }
+
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -21,9 +22,24 @@ body{
   line-height: 1.55;
 }
 
-a{ color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(233,236,241,0.25); }
+/* Links */
+a{
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(233,236,241,0.25);
+}
 a:hover{ border-bottom-color: rgba(233,236,241,0.6); }
 
+/* Better focus (keyboard users + polish) */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible{
+  outline: 2px solid rgba(94, 234, 212, 0.55);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Layout */
 .container{
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
@@ -51,12 +67,14 @@ a:hover{ border-bottom-color: rgba(233,236,241,0.6); }
   border-bottom: none;
 }
 
+/* Nav links should NOT have underline borders */
 .nav-links a{
   margin-left: 18px;
   color: var(--muted);
   border-bottom: none;
   padding: 8px 10px;
   border-radius: 10px;
+  transition: background 160ms ease, color 160ms ease;
 }
 .nav-links a:hover{ color: var(--text); background: rgba(255,255,255,0.06); }
 .nav-links a.active{ color: var(--text); background: rgba(255,255,255,0.08); }
@@ -114,12 +132,24 @@ h3{
   border-radius: var(--radius);
   padding: 18px 18px 16px;
   box-shadow: var(--shadow);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+/* Slight lift on hover for cards with links (subtle, not gimmicky) */
+.card:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.16);
+  background: rgba(18,20,27,0.88);
 }
 
 .card p{ margin: 0 0 10px; color: var(--muted); }
-.card a{ border-bottom: 1px solid rgba(233,236,241,0.25); }
+
+/* Card headings often contain links — keep underline subtle */
+.card a{ border-bottom-color: rgba(233,236,241,0.18); }
+.card a:hover{ border-bottom-color: rgba(233,236,241,0.55); }
+
 .card-links{ margin-top: 12px; color: var(--muted); }
-.card-links a{ color: var(--text); border-bottom-color: rgba(233,236,241,0.25); }
+.card-links a{ color: var(--text); border-bottom-color: rgba(233,236,241,0.22); }
 .card-links .dot{ margin: 0 8px; color: rgba(233,236,241,0.35); }
 
 .meta{
@@ -137,6 +167,7 @@ h3{
   border-radius: 999px;
 }
 
+/* Buttons should not have underline borders */
 .cta-row{
   display:flex;
   flex-wrap: wrap;
@@ -153,8 +184,13 @@ h3{
   color: var(--text);
   text-decoration: none;
   box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+  border-bottom: none;
+  transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
 }
-.btn:hover{ background: rgba(255,255,255,0.09); }
+.btn:hover{
+  background: rgba(255,255,255,0.09);
+  transform: translateY(-1px);
+}
 .btn.primary{
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.18);
@@ -164,8 +200,17 @@ h3{
   margin-top: 10px;
   color: var(--muted);
 }
-.link-row a{ color: var(--muted); border-bottom-color: rgba(167,176,192,0.25); }
-.link-row a:hover{ color: var(--text); border-bottom-color: rgba(233,236,241,0.55); }
+
+/* Footer/link rows should not be noisy */
+.link-row a{
+  color: var(--muted);
+  border-bottom-color: rgba(167,176,192,0.25);
+}
+.link-row a:hover{
+  color: var(--text);
+  border-bottom-color: rgba(233,236,241,0.55);
+}
+
 .dot{ margin: 0 10px; color: rgba(233,236,241,0.35); }
 
 .two-col{
@@ -182,7 +227,12 @@ h3{
   padding: 18px;
 }
 
-ul{ margin: 10px 0 0 18px; color: var(--muted); }
+/* Lists: a bit more readable in case studies */
+ul{
+  margin: 10px 0 0 18px;
+  color: var(--muted);
+  padding-left: 0;
+}
 li{ margin: 6px 0; }
 
 .footer{
@@ -198,8 +248,22 @@ li{ margin: 6px 0; }
   gap: 12px;
   flex-wrap: wrap;
 }
-.footer a{ color: var(--muted); border-bottom-color: rgba(167,176,192,0.25); }
-.footer a:hover{ color: var(--text); border-bottom-color: rgba(233,236,241,0.55); }
+.footer a{
+  color: var(--muted);
+  border-bottom-color: rgba(167,176,192,0.25);
+}
+.footer a:hover{
+  color: var(--text);
+  border-bottom-color: rgba(233,236,241,0.55);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce){
+  *{
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 @media (max-width: 760px){
   .cards{ grid-template-columns: 1fr; }
