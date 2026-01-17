@@ -7,9 +7,12 @@
   <meta name="description" content="Case study: PLM analytics system consolidating multi-year exports into standardized KPIs and decision-ready reporting." />
   <link rel="stylesheet" href="style.css?v=7" />
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="site-header">
-    <nav class="nav">
+    <nav class="nav container">
       <a class="logo" href="index.html">McAelan Remigio</a>
       <div class="nav-links">
         <a href="projects.html">Projects</a>
@@ -20,16 +23,20 @@
     </nav>
   </header>
 
-  <div class="cta-row">
-  <a class="btn" href="projects.html">Back to projects</a>
-  <a class="btn"
-     href="https://www.linkedin.com/in/mcaelan/"
-     target="_blank" rel="noopener">
-    Contact via LinkedIn
-  </a>
-</div>
+  <!-- Main content -->
+  <main class="container">
 
+    <!-- CTA row -->
+    <div class="cta-row">
+      <a class="btn" href="projects.html">Back to projects</a>
+      <a class="btn"
+         href="https://www.linkedin.com/in/mcaelan/"
+         target="_blank" rel="noopener">
+        Contact via LinkedIn
+      </a>
+    </div>
 
+    <!-- Problem / Approach / Scope -->
     <section class="section two-col">
       <div>
         <h2>Problem</h2>
@@ -71,8 +78,10 @@
       </aside>
     </section>
 
+    <!-- KPI groups -->
     <section class="section">
       <h2>KPI groups (report structure)</h2>
+
       <div class="cards">
         <article class="card">
           <h3>Appointments</h3>
@@ -126,8 +135,10 @@
         This case study focuses on workflow design, KPI logic, and decision-ready reporting structure.
       </p>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> McAelan Remigio</p>
@@ -137,5 +148,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
