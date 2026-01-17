@@ -20,8 +20,6 @@ body{
   line-height: 1.55;
 }
 
-
-
 /* Links */
 a{
   color: var(--text);
@@ -30,7 +28,7 @@ a{
 }
 a:hover{ border-bottom-color: rgba(233,236,241,0.6); }
 
-/* Better focus (keyboard users + polish) */
+/* Focus */
 a:focus-visible,
 button:focus-visible,
 .btn:focus-visible{
@@ -47,7 +45,7 @@ button:focus-visible,
   padding-right: 20px;
 }
 
-
+/* Header */
 .site-header{
   position: sticky;
   top: 0;
@@ -69,14 +67,13 @@ button:focus-visible,
   margin: 0 auto;
 }
 
-
 .logo{
   font-weight: 700;
   letter-spacing: 0.2px;
   border-bottom: none;
 }
 
-/* Nav links should NOT have underline borders */
+/* Nav links */
 .nav-links a{
   margin-left: 18px;
   color: var(--muted);
@@ -88,9 +85,8 @@ button:focus-visible,
 .nav-links a:hover{ color: var(--text); background: rgba(255,255,255,0.06); }
 .nav-links a.active{ color: var(--text); background: rgba(255,255,255,0.08); }
 
-.hero{
-  padding: 56px 0 26px;
-}
+/* Hero */
+.hero{ padding: 56px 0 26px; }
 .hero.compact{ padding: 42px 0 18px; }
 
 .kicker{
@@ -125,6 +121,7 @@ h3{
   max-width: 70ch;
 }
 
+/* Sections */
 .section{
   padding: 26px 0 24px;
 }
@@ -134,7 +131,7 @@ main.container{
   padding-right: 28px;
 }
 
-
+/* Cards */
 .cards{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -154,8 +151,6 @@ main.container{
   background: rgba(18,20,27,0.78);
 }
 
-
-/* Slight lift on hover for cards with links (subtle, not gimmicky) */
 .card:hover{
   transform: translateY(-1px);
   border-color: rgba(255,255,255,0.16);
@@ -164,31 +159,7 @@ main.container{
 
 .card p{ margin: 0 0 10px; color: var(--muted); }
 
-/* Card headings often contain links — keep underline subtle */
-.card a{ border-bottom-color: rgba(233,236,241,0.18); }
-.card a:hover{ border-bottom-color: rgba(233,236,241,0.55); }
-
-.card-links{ margin-top: 18px; color: var(--muted); }
-.card-links a{ color: var(--text); border-bottom-color: rgba(233,236,241,0.22); }
-.card-links .dot{ margin: 0 8px; color: rgba(233,236,241,0.35); }
-
-.meta{
-  margin-top: 10px;
-  margin-bottom: 14px;
-  display:flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag{
-  font-size: 0.82rem;
-  color: var(--muted);
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 4px 10px;
-  border-radius: 999px;
-}
-
-/* Buttons should not have underline borders */
+/* CTA buttons */
 .cta-row{
   display:flex;
   flex-wrap: wrap;
@@ -203,37 +174,16 @@ main.container{
   border: 1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.06);
   color: var(--text);
-  text-decoration: none;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
   border-bottom: none;
-  transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+  transition: background 160ms ease, transform 160ms ease;
 }
 .btn:hover{
   background: rgba(255,255,255,0.09);
   transform: translateY(-1px);
 }
-.btn.primary{
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.18);
-}
 
-.link-row{
-  margin-top: 10px;
-  color: var(--muted);
-}
-
-/* Footer/link rows should not be noisy */
-.link-row a{
-  color: var(--muted);
-  border-bottom-color: rgba(167,176,192,0.25);
-}
-.link-row a:hover{
-  color: var(--text);
-  border-bottom-color: rgba(233,236,241,0.55);
-}
-
-.dot{ margin: 0 10px; color: rgba(233,236,241,0.35); }
-
+/* Two-column layout */
 .two-col{
   display:grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
@@ -245,16 +195,15 @@ main.container{
   max-width: 68ch;
 }
 
-
-
+/* ✅ UPDATED SIDEBAR (KEY FIX) */
 .sidebar{
-  background: rgba(18,20,27,0.50);
+  background: rgba(18,20,27,0.32); /* was 0.50 */
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 18px;
 }
 
-/* Lists: a bit more readable in case studies */
+/* Lists */
 ul{
   margin: 10px 0 0 18px;
   color: var(--muted);
@@ -262,12 +211,14 @@ ul{
 }
 li{ margin: 6px 0; }
 
+/* Footer */
 .footer{
   border-top: 1px solid var(--border);
   margin-top: 30px;
   padding: 18px 0;
   color: var(--muted);
 }
+
 .footer-inner{
   display:flex;
   justify-content:space-between;
@@ -275,16 +226,8 @@ li{ margin: 6px 0; }
   gap: 12px;
   flex-wrap: wrap;
 }
-.footer a{
-  color: var(--muted);
-  border-bottom-color: rgba(167,176,192,0.25);
-}
-.footer a:hover{
-  color: var(--text);
-  border-bottom-color: rgba(233,236,241,0.55);
-}
 
-/* Respect reduced-motion preferences */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce){
   *{
     transition: none !important;
@@ -292,6 +235,7 @@ li{ margin: 6px 0; }
   }
 }
 
+/* Mobile */
 @media (max-width: 760px){
   .cards{ grid-template-columns: 1fr; }
   .two-col{ grid-template-columns: 1fr; }
@@ -299,5 +243,4 @@ li{ margin: 6px 0; }
   .nav-links a{ margin-left: 8px; }
   .container{ padding-left: 24px; padding-right: 24px; }
   .site-header{ padding-left: 24px; padding-right: 24px; }
-
 }
