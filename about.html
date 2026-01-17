@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | McAelan Remigio</title>
+  <meta name="description" content="About McAelan Remigio — strategy and analytics focused data analyst building reproducible decision systems." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero compact">
+      <h1>About</h1>
+      <p class="lede">
+        I’m a junior at San Diego State University studying Statistics: Data Science and currently work as a Data Analyst at SDSU Career Services.
+        My work focuses on building analytics systems that support decision-making, reporting, and operations—turning complex institutional data
+        into clear, usable insights.
+      </p>
+      <p class="lede">
+        I’ve worked across applied analytics and research environments, including the Centers for Disease Control and Prevention and the Vera C. Rubin Observatory.
+        What matters most to me is leverage: clear definitions, reproducible workflows, and analytics that move beyond one-off insights to support strategy over time.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Focus areas</h2>
+      <div class="cards">
+        <article class="card">
+          <ul>
+            <li>Strategy &amp; decision analytics</li>
+            <li>Business operations (BizOps) reporting</li>
+            <li>KPI definition &amp; data dictionary design</li>
+            <li>Reproducible analytics workflows</li>
+            <li>Stakeholder-ready communication</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
