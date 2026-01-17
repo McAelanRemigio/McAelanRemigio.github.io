@@ -156,6 +156,7 @@ h3{
 
 .meta{
   margin-top: 10px;
+  margin-bottom: 14px;
   display:flex;
   flex-wrap: wrap;
   gap: 8px;
