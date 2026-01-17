@@ -141,6 +141,11 @@ h3{
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
+.cards .card{
+  background: rgba(18,20,27,0.78);
+}
+
+
 /* Slight lift on hover for cards with links (subtle, not gimmicky) */
 .card:hover{
   transform: translateY(-1px);
