@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | McAelan Remigio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero compact">
+      <h1>Contact</h1>
+      <p class="lede">Let’s connect.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:mcaelan.remigio@gmail.com">mcaelan.remigio@gmail.com</a></p>
+        </article>
+        <article class="card">
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/mcaelan/" target="_blank" rel="noopener">linkedin.com/in/mcaelan</a></p>
+        </article>
+        <article class="card">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/McAelanRemigio" target="_blank" rel="noopener">github.com/McAelanRemigio</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
