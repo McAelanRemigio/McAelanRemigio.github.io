@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | McAelan Remigio</title>
+  <meta name="description" content="Projects by McAelan Remigio — strategy, analytics, and reproducible data workflows." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a class="active" href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero compact">
+      <h1>Projects</h1>
+      <p class="lede">
+        A curated set of work focused on building analytics systems, reproducible workflows, and decision-ready outputs.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="cards">
+        <article class="card">
+          <h3><a href="rubin.html">Rubin Variable Star Workflow</a></h3>
+          <p>
+            End-to-end pipeline: EDA → variability feature engineering → standardized metrics → composite ranking index → top-N candidate outputs.
+          </p>
+          <p class="card-links">
+            <a href="rubin.html">Case study →</a>
+            <span class="dot">•</span>
+            <a href="https://github.com/McAelanRemigio/Rubin_Variable_Star_Workflow" target="_blank" rel="noopener">Repo</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="career-services.html">Career Services PLM Analytics System</a></h3>
+          <p>
+            Consolidating PLM exports into a single reporting dataset, building standardized KPIs, and authoring a data dictionary
+            to support recurring operational and strategy reporting.
+          </p>
+          <p class="card-links">
+            <a href="career-services.html">Case study →</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/McAelanRemigio/SDSU_Undergraduate_Career" target="_blank" rel="noopener">SDSU Undergraduate Career (Living Portfolio)</a></h3>
+          <p>
+            A living archive of applied analytics + workflows built outside the classroom — notes, projects, and deliverables.
+          </p>
+          <p class="card-links">
+            <a href="https://github.com/McAelanRemigio/SDSU_Undergraduate_Career" target="_blank" rel="noopener">Open repository →</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
