@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Services PLM Analytics | McAelan Remigio</title>
+  <meta name="description" content="Case study: PLM analytics system consolidating multi-year exports into standardized KPIs and decision-ready reporting." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero compact">
+      <p class="kicker">Case study</p>
+      <h1>Career Services PLM Analytics System</h1>
+      <p class="lede">
+        Building a standardized analytics workflow that consolidates PLM exports into one reporting dataset,
+        with a data dictionary and recurring KPI reporting to support strategy across Career Services operations.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="projects.html">Back to projects</a>
+        <a class="btn" href="mailto:mcaelan.remigio@gmail.com">Contact me</a>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <h2>Problem</h2>
+        <p>
+          Career Services data lives across multiple exports, service lines, and reporting conventions.
+          Leadership needs consistent, decision-ready reporting across appointments, events, employer engagement,
+          platform adoption, and outcomes — without manual recombination every cycle.
+        </p>
+
+        <h2>Approach</h2>
+        <ul>
+          <li>Extract and consolidate PLM CSV exports into a single reporting-ready dataset (repeatable ETL).</li>
+          <li>Define standardized KPI logic and time windows (last 12 months + totals + unique counts).</li>
+          <li>Build a data dictionary to align definitions across teams and reduce reporting ambiguity.</li>
+          <li>Produce a recurring report package spanning student support, events, employer pipeline, and outcomes.</li>
+        </ul>
+
+        <h2>Scope</h2>
+        <p>
+          Multi-year reporting across Career Management, Industry Relations, and Operations/Infrastructure — with
+          consistent KPI definitions and reusable reporting logic.
+        </p>
+      </div>
+
+      <aside class="sidebar">
+        <h2>Highlights</h2>
+        <ul>
+          <li>130K+ job postings analyzed</li>
+          <li>3+ years of institutional data consolidated</li>
+          <li>Standardized KPI suite + reporting structure</li>
+          <li>Data dictionary for shared definitions</li>
+        </ul>
+
+        <h2>Tools</h2>
+        <p class="meta">
+          R · Excel · Data cleaning · KPI design · Reporting systems · Data dictionary design
+        </p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>KPI groups (report structure)</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Appointments</h3>
+          <ul>
+            <li>Completed appointments trend (last 12 months)</li>
+            <li>Total students helped</li>
+            <li>Appointment types + totals</li>
+            <li>In-person vs Zoom split</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Programs & Events</h3>
+          <ul>
+            <li>Orientations/presentations totals + attendance</li>
+            <li>Workshops count + attendance</li>
+            <li>Event totals + employer participation</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Employer Development</h3>
+          <ul>
+            <li>Approved employers + new employer contacts (last 12 months)</li>
+            <li>Employer orientations vs goal + employer counts</li>
+            <li>Employers at events + totals</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Platforms & Adoption</h3>
+          <ul>
+            <li>Unique logins (last 12 months)</li>
+            <li>Student profile completions (last 12 months)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Outcomes & Opportunities</h3>
+          <ul>
+            <li>Workability-IV enrollments + placements</li>
+            <li>Handshake postings + openings + job types</li>
+            <li>Aztec Mentor Program counts + matches + industry breakdown</li>
+            <li>Career fair check-ins + totals</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
