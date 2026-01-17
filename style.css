@@ -41,9 +41,12 @@ button:focus-visible,
 
 /* Layout */
 .container{
-  width: min(var(--max), calc(100% - 40px));
+  max-width: var(--max);
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 
 .site-header{
   position: sticky;
@@ -120,12 +123,6 @@ h3{
 
 .section{
   padding: 26px 0 24px;
-}
-
-.hero,
-.section{
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 
