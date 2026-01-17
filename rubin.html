@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubin Variable Star Workflow | McAelan Remigio</title>
+  <meta name="description" content="Case study: Rubin Variable Star Workflow — end-to-end reproducible pipeline for ranking candidate variable stars." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero compact">
+      <p class="kicker">Case study</p>
+      <h1>Rubin Variable Star Workflow</h1>
+      <p class="lede">
+        A reproducible, end-to-end pipeline that transforms raw Rubin catalog data into a ranked shortlist
+        of candidate variable stars using engineered variability metrics and an interpretable composite index.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://github.com/McAelanRemigio/Rubin_Variable_Star_Workflow" target="_blank" rel="noopener">View repository</a>
+        <a class="btn" href="projects.html">Back to projects</a>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <h2>Problem</h2>
+        <p>
+          Raw time-domain astronomical catalogs are large, noisy, and difficult to interpret.
+          The goal was to create a transparent workflow that converts catalog-level variability signals into
+          a ranked candidate list suitable for inspection and follow-up.
+        </p>
+
+        <h2>Approach</h2>
+        <ul>
+          <li>Performed EDA on large-scale observational data to separate meaningful variability signal from noise.</li>
+          <li>Engineered complementary variability metrics and standardized them for comparability.</li>
+          <li>Combined metrics into an interpretable composite index to rank candidates consistently.</li>
+          <li>Implemented a top-N selection step that produces inspectable outputs (tables + saved artifacts).</li>
+          <li>Packaged the workflow as a runnable demo with documented assumptions and clear scope boundaries.</li>
+        </ul>
+      </div>
+
+      <aside class="sidebar">
+        <h2>Tools</h2>
+        <p class="meta">
+          Python · Pandas · NumPy · Jupyter · Visualization · Statistical EDA · Feature engineering
+        </p>
+
+        <h2>Deliverables</h2>
+        <ul>
+          <li>Reproducible pipeline</li>
+          <li>Ranked candidate shortlist</li>
+          <li>Saved artifacts for review</li>
+          <li>Documentation + assumptions</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Why this matters</h2>
+      <p>
+        This project emphasizes decision-ready outputs: instead of stopping at exploratory plots,
+        it produces a ranked shortlist with inspectable artifacts — the kind of workflow that translates well to
+        strategy analytics, operations, and decision science.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
