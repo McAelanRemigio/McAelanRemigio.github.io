@@ -150,7 +150,7 @@ h3{
 .card a{ border-bottom-color: rgba(233,236,241,0.18); }
 .card a:hover{ border-bottom-color: rgba(233,236,241,0.55); }
 
-.card-links{ margin-top: 12px; color: var(--muted); }
+.card-links{ margin-top: 18px; color: var(--muted); }
 .card-links a{ color: var(--text); border-bottom-color: rgba(233,236,241,0.22); }
 .card-links .dot{ margin: 0 8px; color: rgba(233,236,241,0.35); }
 
