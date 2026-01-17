@@ -228,7 +228,7 @@ h3{
 }
 
 .sidebar{
-  background: rgba(18,20,27,0.60);
+  background: rgba(18,20,27,0.50);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 18px;
