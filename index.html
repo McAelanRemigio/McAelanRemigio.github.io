@@ -1,111 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="McAelan Remigio | Data Scientist, Rubin Observatory Intern, SDSU Student Leader" />
-  <title>McAelan Remigio</title>
+  <title>McAelan Remigio | Strategy & Analytics</title>
+  <meta name="description" content="McAelan Remigio — Data science-driven strategy and analytics. Building reproducible analytics systems for decision-making and operations." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#top">Home</a> |
-    <a href="https://linkedin.com/in/mcaelan" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-    <a href="https://github.com/mcaelanremigio" target="_blank" rel="noopener noreferrer">GitHub</a>
-  </nav>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">McAelan Remigio</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <main class="container" id="top">
-    <img src="assets/img/AAA2025_headshot.jpg" alt="McAelan Remigio" width="160" class="headshot" />
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Data Analyst @ SDSU Career Services · Former CDC ORISE Fellow · Rubin Observatory</p>
+      <h1>Data science–driven strategy & analytics.</h1>
+      <p class="lede">
+        I build reproducible analytics systems that turn messy institutional data into clear KPIs,
+        decision-ready reporting, and operational strategy.
+      </p>
 
-    <h1>McAelan Remigio</h1>
-    <p><strong>Data Scientist • Vera C. Rubin Observatory Intern • Student Leader</strong></p>
+      <div class="cta-row">
+        <!-- Replace # with your resume PDF path once you upload it -->
+        <a class="btn primary" href="#" aria-disabled="true">Resume (PDF)</a>
+        <a class="btn" href="mailto:mcaelan.remigio@gmail.com">Email</a>
+        <a class="btn" href="projects.html">View projects</a>
+      </div>
 
-    <section>
-      <p>I’m a third-year undergraduate at San Diego State University pursuing a B.S. in Statistics: Data Science, with minors in Applied Mathematics and Leadership Development.</p>
-      <p>I’ve worked with the CDC, the SDSU Research Foundation, and currently hold roles at:</p>
-      <ul>
-        <li><strong>Vera C. Rubin Observatory:</strong> Machine learning classification of variable stars</li>
-        <li><strong>SDSU Student Life & Leadership:</strong> Event programming and analytics</li>
-        <li><strong>SDSU Career Services:</strong> Engagement metric dashboards and reporting</li>
-      </ul>
+      <div class="link-row">
+        <a href="https://www.linkedin.com/in/mcaelan/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/McAelanRemigio" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </section>
 
-    <section>
-      <h2 id="projects">🔭 Projects</h2>
-      <ul>
-        <li>
-          <strong><a href="https://github.com/McAelanRemigio/VeraRubin" target="_blank" rel="noopener noreferrer">Rubin Variable Star Classifier</a></strong><br />
-          Classified RR Lyrae, Miras, LPVs, and Cepheids and mapped them in 3D using simulated LSST data from the Vera Rubin Observatory.  
-          Built Python pipelines on the TAP Service to query astronomical catalogs in ADQL and Astropy, engineered variability features, applied PCA, and modeled Period-Luminosity relations for distance estimation.
-        </li>
-        <li>
-          <strong><a href="https://github.com/McAelanRemigio/ATUS" target="_blank" rel="noopener noreferrer">ATUS Causal Inference Study</a></strong><br />
-          Discovered that remote work led to a 0.7-hour/day increase in leisure time across U.S. households post-pandemic.  
-          Analyzed 10,000+ American Time Use Survey records using difference-in-differences (DiD) modeling in R with Tidyverse, dplyr, readr, and stringr.
-        </li>
-        <li>
-          <strong><a href="https://github.com/McAelanRemigio/MPIE" target="_blank" rel="noopener noreferrer">MPIE HSI Impact Evaluation</a></strong><br />
-          Identified a 60% increase in student success rates after implementing professional development programs across Hispanic-Serving Institutions.  
-          Utilized R, SQL, and regression modeling to analyze outcomes of 10,000+ HSI students and co-designed a 2-year PD program for math educators.
-        </li>
-      </ul>
-      
+    <section class="section">
+      <h2>Featured work</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3><a href="rubin.html">Rubin Variable Star Workflow</a></h3>
+          <p>
+            A reproducible, end-to-end data pipeline that transforms raw Rubin catalog data into a ranked shortlist
+            of variable-star candidates using engineered variability metrics and an interpretable composite index.
+          </p>
+          <div class="meta">
+            <span class="tag">Pipeline</span>
+            <span class="tag">Feature engineering</span>
+            <span class="tag">Decision index</span>
+          </div>
+          <p class="card-links">
+            <a href="rubin.html">Read case study →</a>
+            <span class="dot">•</span>
+            <a href="https://github.com/McAelanRemigio/Rubin_Variable_Star_Workflow" target="_blank" rel="noopener">Repo</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="career-services.html">Career Services PLM Analytics System</a></h3>
+          <p>
+            A centralized reporting workflow that consolidates multi-year PLM exports into standardized KPIs and
+            decision-ready reporting to support institutional strategy across Career Services operations.
+          </p>
+          <div class="meta">
+            <span class="tag">BizOps</span>
+            <span class="tag">KPI design</span>
+            <span class="tag">Data dictionary</span>
+          </div>
+          <p class="card-links">
+            <a href="career-services.html">Read case study →</a>
+          </p>
+        </article>
+      </div>
     </section>
 
-    <details open>
-      <summary><h2>👥 SDSU Leadership & Organizations</h2></summary>
-      <ul>
-        <li><strong>Founder</strong>, Data Science Initiative (DSI)<br />
-          Founded SDSU’s first student-run data science org, leading events, mentorship, and community building for 130+ STEM majors across disciplines.
-        </li>
-        <li><strong>Co-Founder</strong>, Coalition of Tech Representatives & Leadership (CTRL)<br />
-          Co-founded CTRL, an alliance of SDSU tech orgs (AI Club, ACM, GWC, etc.) that appoint representatives to meet monthly. The coalition coordinates joint events, connects students to research and industry, and bridges students, faculty, and administration in computer science.
-        </li>        
-        <li><strong>Co-Founder</strong>, GrowLuv SDSU Chapter<br />
-          Established a national mental wellness initiative to SDSU for 50+ students, focusing on care, vulnerability, and student connection through community-led projects.
-        </li>
-        <li><strong>Co-Founder</strong>, Climate Café<br />
-          Built student-led space for climate-focused conversations, emotional reflection, and action rooted in sustainability and care with 30+ students.
-        </li>
-        <li><strong>Co-Founder</strong>, Book Club<br />
-          Created the foundation of a campus-wide reading community centered on diverse voices, personal growth, and open discussion beyond the classroom for 140+ book readers.
-        </li>
-        <li><strong>Executive President</strong>, Society of Statisticians & Actuaries (SSA)<br />
-          Led an org for 180+ statisticians and actuaries with resume reviews, industry panels, and student-friendly stats resources.
-        </li>
-      </ul>      
-    </details>
-
-    <details open>
-      <summary><h2>📚 Presentations & Publications</h2></summary>
-      <ul>
-        <li><strong>AAS 247 Conference Presentation (Upcoming)</strong><br />
-          Presenting variable star classification research with Rubin Observatory data in 2026.
-        </li>
-        <li><strong>Astrobites Article (Planned)</strong><br />
-          Writing a piece demonstrating data science in astronomy for undergraduates, based on my Rubin internship experience.
-        </li>
-        <li><strong>CDC COVID-19 Dashboard (Pending)</strong><br />
-          Awaiting publication updates from the team at the CDC; contributed to standardizing global SARS-CoV-2 data pipelines.
-        </li>
-      </ul>
-    </details>
-
-    <footer>
-      &copy; 2025 McAelan Remigio — All rights reserved.
-    </footer>
+    <section class="section">
+      <h2>What I’m aiming for</h2>
+      <p class="lede">
+        Business Strategy Analyst · Decision Science Analyst · BizOps Analyst · Consulting Analyst (Strategy/Analytics) · Product Strategy Analyst
+      </p>
+    </section>
   </main>
 
-  <button id="topBtn" title="Back to Top">↑</button>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> McAelan Remigio</p>
+      <div class="footer-links">
+        <a href="mailto:mcaelan.remigio@gmail.com">mcaelan.remigio@gmail.com</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/mcaelan/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/McAelanRemigio" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
-    const topBtn = document.getElementById("topBtn");
-    window.onscroll = () => {
-      topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-    };
-    topBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
