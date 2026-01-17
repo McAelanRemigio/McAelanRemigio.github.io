@@ -241,6 +241,11 @@ main.container{
   align-items: start;
 }
 
+.two-col > div{
+  max-width: 68ch;
+}
+
+
 
 .sidebar{
   background: rgba(18,20,27,0.50);
