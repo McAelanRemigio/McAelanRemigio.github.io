@@ -284,4 +284,7 @@ li{ margin: 6px 0; }
   .two-col{ grid-template-columns: 1fr; }
   .nav{ gap: 12px; }
   .nav-links a{ margin-left: 8px; }
+  .container{ padding-left: 24px; padding-right: 24px; }
+  .site-header{ padding-left: 24px; padding-right: 24px; }
+
 }
