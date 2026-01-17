@@ -129,6 +129,11 @@ h3{
   padding: 26px 0 24px;
 }
 
+main.container{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 
 .cards{
   display: grid;
@@ -232,7 +237,6 @@ h3{
 .two-col{
   display:grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-  padding-left: 12px;
   gap: 18px;
   align-items: start;
 }
