@@ -344,4 +344,20 @@ li{ margin: 6px 0; }
 .about-page .section.centered .card {
   text-align: left;
 }
+/* Center Focus Areas section ONLY */
+.about-page .focus-areas {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Center the Focus Areas heading */
+.about-page .focus-areas h2 {
+  text-align: center;
+}
+
+/* Card already fixed, but keep it explicit */
+.about-page .focus-areas .cards {
+  display: flex;
+  justify-content: center;
+}
 
