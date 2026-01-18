@@ -244,3 +244,20 @@ li{ margin: 6px 0; }
   .container{ padding-left: 24px; padding-right: 24px; }
   .site-header{ padding-left: 24px; padding-right: 24px; }
 }
+
+/* About page headshot sizing */
+.about-image img {
+  width: 180px;          /* hard cap */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Keep it centered vertically with text */
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
