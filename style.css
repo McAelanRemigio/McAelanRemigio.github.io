@@ -289,10 +289,6 @@ li{ margin: 6px 0; }
   margin-bottom: 1rem;
 }
 
-/* =========================
-   ABOUT PAGE ONLY STYLES
-   ========================= */
-
 .about-page .centered {
   max-width: 720px;
   margin: 0 auto;
@@ -343,3 +339,16 @@ li{ margin: 6px 0; }
     width: 140px;
   }
 }
+
+/* Fully center Focus Areas section on About page */
+.about-page .section.centered {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Keep list text readable (not centered) */
+.about-page .section.centered .card {
+  text-align: left;
+}
+
