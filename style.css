@@ -266,3 +266,25 @@ li{ margin: 6px 0; }
   max-width: 700px;
   margin: 0 auto;
 }
+
+/* Centered About page layout */
+.centered {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left; /* keep text readable */
+}
+
+/* Headshot styling */
+.about-headshot {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1.25rem auto;
+}
+
+/* Center the About title only */
+.centered h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
