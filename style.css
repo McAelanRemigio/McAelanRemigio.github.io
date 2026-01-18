@@ -340,13 +340,6 @@ li{ margin: 6px 0; }
   }
 }
 
-/* Fully center Focus Areas section on About page */
-.about-page .section.centered {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* Keep list text readable (not centered) */
 .about-page .section.centered .card {
   text-align: left;
