@@ -310,13 +310,6 @@ li{ margin: 6px 0; }
   margin-bottom: 1rem;
 }
 
-/* Justify About text only */
-.about-page .lede {
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-}
-
 /* Focus Areas card — About page only */
 .about-page .cards {
   display: flex;
@@ -361,3 +354,6 @@ li{ margin: 6px 0; }
   justify-content: center;
 }
 
+.about-page .focus-title {
+  text-align: center;
+}
