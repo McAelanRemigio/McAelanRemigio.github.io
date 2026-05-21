@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rubin Variable Star Workflow | McAelan Remigio</title>
-  <meta name="description" content="Case study: Rubin Variable Star Workflow — end-to-end reproducible pipeline for ranking candidate variable stars." />
+  <meta name="description" content="Case study: Rubin Variable Star Workflow — a decision pipeline for turning large, noisy catalog data into prioritized candidate recommendations." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,8 +25,10 @@
       <p class="kicker">Case study</p>
       <h1>Rubin Variable Star Workflow</h1>
       <p class="lede">
-        A reproducible, end-to-end pipeline that transforms raw Rubin catalog data into a ranked shortlist
-        of candidate variable stars using engineered variability metrics and an interpretable composite index.
+        A decision pipeline that turns large, noisy Rubin Observatory catalog data into a prioritized
+        shortlist of candidate variable stars. The workflow was designed to support ranking,
+        review, and follow-up decisions through transparent scoring, repeatable analysis, and
+        interpretable model outputs.
       </p>
 
       <div class="cta-row">
@@ -36,79 +38,98 @@
         <a class="btn" href="projects.html">Back to projects</a>
       </div>
     </section>
-    <section class="section">
-  <h2>Outcomes</h2>
 
-  <ul>
-    <li>
-      Delivered an end-to-end, reproducible pipeline spanning exploratory analysis,
-      feature engineering, ranking, and machine learning–based classification of
-      candidate variable stars.
-    </li>
-    <li>
-      Produced decision-ready outputs, including a ranked candidate shortlist and
-      an interpretable classifier trained on the first wave of photometric data.
-    </li>
-    <li>
-      Initial models achieve ~94% classification accuracy, with strong performance
-      on dominant variability classes (LPVs and RR Lyrae).
-    </li>
-    <li>
-      Designed to be repeatable, interpretable, and robust to noisy observations
-      and terabyte-scale catalog updates.
-    </li>
-    <li>
-      Documented for accessibility by both STEM and non-STEM users, enabling reuse
-      by future researchers and serving as a foundation for variable star
-      classification workflows.
-    </li>
-  </ul>
-</section>
+    <section class="section">
+      <h2>Outcomes</h2>
+
+      <ul>
+        <li>
+          Built an end-to-end decision workflow that converts high-volume observational data
+          into a ranked, reviewable candidate shortlist.
+        </li>
+        <li>
+          Designed an interpretable scoring system to help prioritize which objects should receive
+          further inspection or follow-up analysis.
+        </li>
+        <li>
+          Produced reusable outputs for stakeholders, including ranked tables, saved artifacts,
+          model results, and documented assumptions.
+        </li>
+        <li>
+          Developed an initial classifier achieving ~94% accuracy, creating a scalable foundation
+          for triaging future catalog updates.
+        </li>
+        <li>
+          Documented the workflow for technical and non-technical audiences, emphasizing
+          repeatability, transparency, and decision usefulness.
+        </li>
+      </ul>
+    </section>
 
     <figure class="figure">
-  <img
-    src="assets/confusion-matrix.png"
-    alt="Confusion matrix for variable star classification showing strong performance on LPVs and RR Lyrae"
-  />
-  <figcaption>
-    Confusion matrix for the initial machine learning classifier trained on the
-    first photometric data release. The model performs strongly on LPVs and
-    RR Lyrae, which comprise over 95% of the available sample, demonstrating
-    robustness to class imbalance and noisy observations.
-  </figcaption>
-</figure>
+      <img
+        src="assets/confusion-matrix.png"
+        alt="Confusion matrix for variable star classification showing strong performance on LPVs and RR Lyrae"
+      />
+      <figcaption>
+        Confusion matrix for the initial classification model. Beyond model performance, the key
+        value of this step was operational: creating a repeatable way to triage large volumes of
+        candidates and focus review effort where it is most useful.
+      </figcaption>
+    </figure>
 
     <section class="section two-col">
       <div>
         <h2>Problem</h2>
         <p>
-          Time-domain astronomical catalogs are large, noisy, and difficult to translate into concrete decisions.
-          The goal was to design a transparent workflow that converts catalog-level variability signals into
-          a ranked candidate list suitable for inspection, comparison, and follow-up.
+          Large astronomical catalogs create a prioritization problem. Researchers cannot manually
+          inspect every object with equal attention, especially when observations are noisy,
+          incomplete, or updated at scale. The challenge was to turn raw catalog-level signals into
+          a structured decision process: which candidates should be reviewed first, why they ranked
+          highly, and how the process could be repeated as more data becomes available.
         </p>
 
         <h2>Approach</h2>
         <ul>
-          <li>Performed EDA on large-scale observational data to separate meaningful variability signal from noise.</li>
-          <li>Engineered complementary variability metrics and standardized them to enable consistent comparison.</li>
-          <li>Combined metrics into an interpretable composite index to support ranking and prioritization.</li>
-          <li>Implemented a top-N selection step that produces inspectable outputs (tables and saved artifacts).</li>
-          <li>Packaged the workflow as a runnable demo with documented assumptions and clear scope boundaries.</li>
+          <li>
+            Translated an open-ended research problem into a structured ranking and prioritization workflow.
+          </li>
+          <li>
+            Explored large-scale observational data to identify signals that could support candidate triage.
+          </li>
+          <li>
+            Engineered interpretable variability metrics that could be compared consistently across objects.
+          </li>
+          <li>
+            Combined metrics into a composite index to create a transparent prioritization framework.
+          </li>
+          <li>
+            Added machine learning classification to support scalable review as additional catalog data becomes available.
+          </li>
+          <li>
+            Packaged the workflow with documented assumptions, outputs, and scope boundaries for reuse by future researchers.
+          </li>
         </ul>
       </div>
 
       <aside class="sidebar">
+        <h2>Focus Areas</h2>
+        <p class="meta">
+          Decision analytics · Prioritization systems · Product-style workflow design · Program analytics · Data operations
+        </p>
+
         <h2>Tools</h2>
         <p class="meta">
-          Python · Pandas · NumPy · Jupyter · Visualization · Statistical EDA · Feature engineering
+          Python · Pandas · NumPy · Jupyter · Scikit-learn · Statistical EDA · Feature engineering
         </p>
 
         <h2>Deliverables</h2>
         <ul>
-          <li>Reproducible pipeline</li>
+          <li>Decision pipeline</li>
           <li>Ranked candidate shortlist</li>
-          <li>Saved artifacts for review</li>
-          <li>Documentation + assumptions</li>
+          <li>Composite scoring framework</li>
+          <li>Classification model</li>
+          <li>Reusable documentation</li>
         </ul>
       </aside>
     </section>
@@ -116,10 +137,10 @@
     <section class="section">
       <h2>Why this matters</h2>
       <p>
-        Rather than stopping at exploratory analysis, this project produces decision-ready outputs:
-        a ranked shortlist with inspectable artifacts and documented assumptions. This pattern transparent
-        scoring, prioritization, and repeatability translates directly to strategy analytics, operations,
-        and decision science contexts.
+        This project is less about astronomy alone and more about a transferable analytics pattern:
+        turning complex, noisy data into a repeatable decision system. The same structure applies to
+        strategy, operations, product, and program analytics contexts where teams need to prioritize
+        limited attention, explain recommendations, and create workflows that scale as new data arrives.
       </p>
     </section>
   </main>
