@@ -10,11 +10,15 @@
 }
 
 *{ box-sizing: border-box; }
-html,body{ height:100%; }
+
+html,
+body{
+  height: 100%;
+}
 
 body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   background: var(--bg);
   color: var(--text);
   line-height: 1.55;
@@ -26,7 +30,10 @@ a{
   text-decoration: none;
   border-bottom: 1px solid rgba(233,236,241,0.25);
 }
-a:hover{ border-bottom-color: rgba(233,236,241,0.6); }
+
+a:hover{
+  border-bottom-color: rgba(233,236,241,0.6);
+}
 
 /* Focus */
 a:focus-visible,
@@ -46,6 +53,11 @@ button:focus-visible,
   padding-right: 20px;
 }
 
+main.container{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 /* Header */
 .site-header{
   position: sticky;
@@ -57,9 +69,9 @@ button:focus-visible,
 }
 
 .nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 0;
 }
 
@@ -131,15 +143,20 @@ button:focus-visible,
 }
 
 .hero-photo{
+  display: block;
   width: 245px;
   height: 245px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.04);
   box-shadow: var(--shadow);
 }
 
+/* Typography */
 .kicker{
   color: var(--muted);
   margin: 0 0 12px;
@@ -212,11 +229,6 @@ h3{
 /* Sections */
 .section{
   padding: 26px 0 24px;
-}
-
-main.container{
-  padding-left: 28px;
-  padding-right: 28px;
 }
 
 /* Cards */
@@ -299,14 +311,14 @@ main.container{
 
 /* CTA buttons */
 .cta-row{
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 18px 0 10px;
 }
 
 .btn{
-  display:inline-block;
+  display: inline-block;
   padding: 10px 14px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.14);
@@ -324,7 +336,7 @@ main.container{
 
 /* Two-column layout */
 .two-col{
-  display:grid;
+  display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 18px;
   align-items: start;
@@ -376,9 +388,9 @@ li{
 }
 
 .footer-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
