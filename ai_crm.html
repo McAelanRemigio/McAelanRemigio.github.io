@@ -1,10 +1,11 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Strategy & Operations Reporting Layer | McAelan Remigio</title>
-  <meta name="description" content="Case study: AI-assisted reporting layer that converts structured CRM-style data into executive summaries, KPI explanations, and strategy-ready insights." />
+  <title>Twenty AI CRM Copilot | McAelan Remigio</title>
+  <meta name="description" content="Twenty AI CRM Copilot — an independently developed AI-powered CRM intelligence platform connecting operational data, PostgreSQL, and locally hosted language models to generate actionable business insights." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -23,230 +24,305 @@
 
   <main class="container">
     <section class="hero compact">
-      <p class="kicker">Case study</p>
+      <p class="kicker">Independent Product Development · Applied AI · Business Intelligence</p>
 
-      <h1>AI Strategy & Operations Reporting Layer</h1>
+      <h1>Twenty AI CRM Copilot</h1>
 
       <p class="lede">
-        A prototype reporting layer that connects structured CRM-style data to AI-generated
-        executive summaries, KPI explanations, and strategy-ready insights for operations teams.
+        An AI-powered CRM intelligence platform that transforms operational customer data
+        into structured business insights, executive summaries, and decision-ready reporting
+        through locally hosted language models.
       </p>
 
       <p class="lede">
-        The project explores how AI can support business reporting not by replacing analysis,
-        but by helping teams translate structured data into clearer narratives, faster review cycles,
-        and more actionable decision support.
+        Built around Twenty CRM, PostgreSQL, and Ollama, the project explores how AI agents
+        can extend existing business systems by interpreting operational data, explaining
+        performance signals, and turning CRM activity into actionable intelligence.
+      </p>
+
+      <p class="lede">
+        The broader vision is to make AI-assisted business intelligence accessible through
+        reusable workflows and agent-based integrations, with potential applications
+        beyond a standalone CRM reporting tool.
       </p>
 
       <div class="cta-row">
-        <a class="btn" href="projects.html">Back to projects</a>
         <a class="btn"
            href="https://github.com/McAelanRemigio/CRM_Intelligence_Layer_AI"
            target="_blank" rel="noopener">
           View repository
         </a>
+        <a class="btn" href="projects.html">Back to projects</a>
       </div>
     </section>
 
     <section class="section">
-      <h2>Outcomes</h2>
+      <h2>Overview</h2>
 
-      <ul>
-        <li>
-          Built a prototype AI-assisted reporting workflow that converts structured CRM-style records
-          into executive summaries, KPI explanations, and operational insights.
-        </li>
-        <li>
-          Designed the project around a strategy and operations use case: helping teams interpret
-          performance signals, activity patterns, and follow-up priorities from database outputs.
-        </li>
-        <li>
-          Created a repeatable workflow for moving from structured data to narrative reporting,
-          reducing the gap between raw metrics and stakeholder-ready interpretation.
-        </li>
-        <li>
-          Demonstrated how AI can be layered on top of existing business data systems to support
-          faster reporting, clearer communication, and more consistent decision review.
-        </li>
-      </ul>
+      <div class="cards">
+        <article class="card">
+          <h3>Product</h3>
+          <p>
+            AI-powered CRM intelligence and operational reporting.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Architecture</h3>
+          <p>
+            Twenty CRM · PostgreSQL · Python · Ollama · Local LLMs.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Development</h3>
+          <p>
+            Independent development · Agent workflows · Product exploration.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="section two-col">
       <div>
-        <h2>Problem</h2>
+        <h2>The problem</h2>
+
         <p>
-          Many operations and program teams collect large amounts of structured activity data, but
-          the data often remains trapped in tables, exports, dashboards, or CRM systems. Stakeholders
-          still need someone to explain what changed, why it matters, and what decisions should follow.
+          CRM platforms capture valuable operational information: customer interactions,
+          company records, activities, pipeline changes, and relationship histories.
+          However, collecting information and understanding it are two different challenges.
         </p>
 
         <p>
-          The challenge was to prototype a lightweight reporting layer that could sit between
-          structured operational data and human decision-makers: preserving the underlying data logic
-          while making outputs easier to interpret and act on.
+          Teams often rely on manual reviews, dashboards, and fragmented reporting processes
+          to understand what is happening across their customer and operational data.
+          Even when the information is available, translating it into meaningful business
+          insights requires additional analytical work.
         </p>
 
-        <h2>Approach</h2>
-        <ul>
-          <li>
-            Modeled a CRM-style data environment with structured records suitable for reporting and analysis.
-          </li>
-          <li>
-            Designed SQL-style queries and reporting logic to extract performance signals from the data.
-          </li>
-          <li>
-            Connected structured outputs to AI-generated summaries that explain patterns in plain language.
-          </li>
-          <li>
-            Framed outputs around executive decision support: KPI movement, activity trends, risk flags,
-            and possible follow-up actions.
-          </li>
-          <li>
-            Documented the workflow as a product-style reporting layer rather than a one-off AI experiment.
-          </li>
-        </ul>
-
-        <h2>Strategic value</h2>
         <p>
-          The value of this project is not simply that AI can summarize data. The stronger idea is that
-          teams can build reporting systems where data structure, business logic, and narrative explanation
-          work together. That pattern is directly relevant to strategy, operations, program analytics,
-          product analytics, and business intelligence teams.
+          The opportunity is to introduce an intelligence layer that works with existing
+          CRM infrastructure, using structured data and AI to make business information
+          easier to interpret and act upon.
+        </p>
+
+        <h2>The solution</h2>
+
+        <p>
+          Twenty AI CRM Copilot connects CRM records to a database-backed analytical
+          workflow and locally hosted language models. Rather than asking an LLM to
+          independently interpret an entire database, the system uses structured
+          information and defined workflows to provide context for AI-generated outputs.
+        </p>
+
+        <p>
+          The result is a foundation for automated business reporting, contextual
+          summaries, KPI interpretation, and operational intelligence that can be
+          integrated into existing workflows.
+        </p>
+
+        <h2>Product philosophy</h2>
+
+        <p>
+          The goal isn't to replace business analysts or decision-makers with AI.
+          It's to reduce the distance between operational data and useful understanding.
+        </p>
+
+        <p>
+          Reliable data structures provide the foundation. Business logic establishes
+          context. Language models make information easier to interpret and communicate.
+          Human judgment remains central to the decisions that follow.
         </p>
       </div>
 
       <aside class="sidebar">
-        <h2>Focus areas</h2>
-        <p class="meta">
-          AI-assisted reporting · CRM analytics · Product analytics · Strategy operations · Decision support
-        </p>
-
-        <h2>Tools</h2>
-        <p class="meta">
-          SQL · Python · Structured data · Reporting logic · Prompt design · Business intelligence
-        </p>
-
-        <h2>Deliverables</h2>
+        <h2>Core capabilities</h2>
         <ul>
-          <li>Prototype reporting layer</li>
-          <li>Structured CRM-style dataset</li>
-          <li>KPI and query logic</li>
-          <li>AI-generated summaries</li>
-          <li>Documentation and use-case framing</li>
+          <li>CRM data integration</li>
+          <li>Database-backed analytical workflows</li>
+          <li>LLM-powered interpretation</li>
+          <li>Structured AI-generated summaries</li>
+          <li>KPI and operational reporting</li>
+          <li>CRM-integrated AI outputs</li>
         </ul>
+
+        <h2>Technology</h2>
+        <p class="meta">
+          Python · PostgreSQL · Twenty CRM · Ollama · Locally hosted LLMs · Prompt orchestration
+        </p>
+
+        <h2>Development direction</h2>
+        <p class="meta">
+          AI agent integration · Reusable agent skills · Product development · Commercialization exploration
+        </p>
       </aside>
     </section>
 
     <section class="section">
-      <h2>Workflow</h2>
+      <h2>System architecture</h2>
+
+      <p>
+        The platform follows a structured workflow connecting operational CRM information
+        with local AI inference.
+      </p>
 
       <div class="cards">
         <article class="card">
-          <h3>1. Structure the data</h3>
+          <h3>1. CRM data source</h3>
           <p>
-            Start with CRM-style records that capture operational activity, stakeholder interactions,
-            program status, or customer/account information.
+            Twenty CRM provides the operational context, including company records,
+            customer information, and activity data.
           </p>
           <div class="meta">
-            <span class="tag">CRM data</span>
-            <span class="tag">Data modeling</span>
-            <span class="tag">Operations context</span>
+            <span class="tag">Twenty CRM</span>
+            <span class="tag">Operational data</span>
           </div>
         </article>
 
         <article class="card">
-          <h3>2. Define the reporting logic</h3>
+          <h3>2. Data infrastructure</h3>
           <p>
-            Use structured queries and KPI definitions to extract the signals that matter for review,
-            planning, prioritization, or follow-up.
+            Python and PostgreSQL support structured data handling, reproducible
+            workflows, and the preparation of relevant information for analysis.
           </p>
           <div class="meta">
-            <span class="tag">SQL logic</span>
-            <span class="tag">KPI design</span>
-            <span class="tag">Business rules</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
           </div>
         </article>
 
         <article class="card">
-          <h3>3. Generate narrative summaries</h3>
+          <h3>3. AI inference</h3>
           <p>
-            Convert structured outputs into plain-language summaries that explain what happened,
-            what changed, and what a stakeholder should pay attention to.
+            Locally hosted language models process contextual information through
+            orchestrated prompts and structured output workflows.
+          </p>
+          <div class="meta">
+            <span class="tag">Ollama</span>
+            <span class="tag">Local LLMs</span>
+            <span class="tag">Prompt orchestration</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>4. Business intelligence</h3>
+          <p>
+            AI-generated insights and summaries are returned to the CRM, creating
+            a more accessible layer of operational intelligence.
           </p>
           <div class="meta">
             <span class="tag">AI summaries</span>
-            <span class="tag">Executive reporting</span>
-            <span class="tag">Insight generation</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>4. Support decisions</h3>
-          <p>
-            Package results around decision usefulness: risks, opportunities, next steps, and areas
-            that need human review.
-          </p>
-          <div class="meta">
+            <span class="tag">CRM integration</span>
             <span class="tag">Decision support</span>
-            <span class="tag">Prioritization</span>
-            <span class="tag">Actionability</span>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section">
-      <h2>Example use cases</h2>
+      <h2>Applications</h2>
 
       <div class="cards">
         <article class="card">
-          <h3>Executive summaries</h3>
+          <h3>Executive intelligence</h3>
           <p>
-            Automatically summarize key operational changes, notable trends, and recommended areas
-            for leadership attention.
+            Transform operational records into concise summaries that help
+            leadership understand activity, performance, and emerging priorities.
           </p>
         </article>
 
         <article class="card">
-          <h3>KPI explanations</h3>
+          <h3>KPI interpretation</h3>
           <p>
-            Explain why a metric may have shifted by connecting structured records to observed activity,
-            segment changes, or follow-up patterns.
+            Provide contextual explanations of business metrics and performance
+            signals using structured operational information.
           </p>
         </article>
 
         <article class="card">
-          <h3>Pipeline review</h3>
+          <h3>CRM intelligence</h3>
           <p>
-            Help teams identify which accounts, programs, cases, or stakeholders may need attention
-            based on structured signals.
+            Make customer and company records more useful through AI-generated
+            context, summaries, and relationship insights.
           </p>
         </article>
 
         <article class="card">
-          <h3>Program reporting</h3>
+          <h3>Agent-based workflows</h3>
           <p>
-            Translate database outputs into consistent narrative updates for recurring reports,
-            check-ins, or planning cycles.
+            Explore how CRM intelligence capabilities can be packaged into
+            reusable skills for AI agents and integrated into broader
+            productivity workflows.
           </p>
         </article>
       </div>
+    </section>
+
+    <section class="section">
+      <h2>Beyond the prototype</h2>
+
+      <p>
+        An important direction for this project is making its capabilities
+        accessible beyond a standalone application.
+      </p>
+
+      <p>
+        AI agent ecosystems introduce another distribution model: instead of
+        requiring users to operate a separate analytics application, specialized
+        capabilities can be packaged into reusable skills that agents invoke
+        as part of larger workflows.
+      </p>
+
+      <p>
+        I am exploring this direction alongside potential marketplace distribution
+        and commercialization opportunities. The broader objective is to develop
+        practical AI tools that solve recognizable business problems and can
+        eventually reach users beyond their original development environment.
+      </p>
     </section>
 
     <section class="section">
       <h2>Why this matters</h2>
 
       <p>
-        AI is most useful in operations when it is tied to structured data, clear business logic,
-        and a defined decision context. This project demonstrates a practical pattern: use databases
-        and reporting rules for reliability, then use AI to improve interpretation, communication,
-        and review speed.
+        Businesses have invested heavily in systems that collect and organize
+        operational data. The next opportunity is making that information
+        substantially more useful through AI.
       </p>
 
       <p>
-        For strategy and operations teams, that means AI can become part of the reporting layer:
-        helping people move from “what does the data say?” to “what should we pay attention to next?”
+        Twenty AI CRM Copilot explores that opportunity by bringing together
+        data infrastructure, business intelligence, and locally hosted language
+        models in a practical application.
       </p>
+
+      <p>
+        For me, this project represents an intersection of technical development
+        and product thinking: identifying an operational problem, engineering
+        a solution, exploring new distribution models, and investigating
+        how independent software can create measurable business value.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Development status</h2>
+
+      <p>
+        Independently developed and actively evolving. Current exploration
+        includes expanded AI capabilities, agent integrations, and potential
+        commercial distribution.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn"
+           href="https://github.com/McAelanRemigio/CRM_Intelligence_Layer_AI"
+           target="_blank" rel="noopener">
+          Explore the code
+        </a>
+        <a class="btn" href="contact.html">
+          Get in touch
+        </a>
+      </div>
     </section>
   </main>
 
