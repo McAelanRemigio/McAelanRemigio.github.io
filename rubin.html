@@ -1,16 +1,25 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rubin Variable Star Workflow | McAelan Remigio</title>
-  <meta name="description" content="Case study: Rubin Variable Star Workflow — a decision pipeline for turning large, noisy catalog data into prioritized candidate recommendations." />
+
+  <title>Rubin Variable Star Classification | McAelan Remigio</title>
+
+  <meta
+    name="description"
+    content="Case study: Large-scale astronomical data analysis, variable star classification, and reproducible decision workflows developed through the NSF-DOE Vera C. Rubin Observatory research program."
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav">
       <a class="logo" href="index.html">McAelan Remigio</a>
+
       <div class="nav-links">
         <a href="projects.html">Projects</a>
         <a href="writing.html">Writing</a>
@@ -22,125 +31,216 @@
 
   <main class="container">
     <section class="hero compact">
-      <p class="kicker">Case study</p>
-      <h1>Rubin Variable Star Workflow</h1>
+      <p class="kicker">
+        Case Study · Data Science · Statistical Modeling · Decision Systems
+      </p>
+
+      <h1>Rubin Variable Star Classification</h1>
+
       <p class="lede">
-        A decision pipeline that turns large, noisy Rubin Observatory catalog data into a prioritized
-        shortlist of candidate variable stars. The workflow was designed to support ranking,
-        review, and follow-up decisions through transparent scoring, repeatable analysis, and
-        interpretable model outputs.
+        Developed analytical workflows for large-scale astronomical
+        time-series data through the NSF-DOE Vera C. Rubin Observatory
+        research program. The project combined statistical exploration,
+        feature engineering, and machine learning to identify and classify
+        variable stars, transforming complex observational data into
+        structured and interpretable research outputs.
       </p>
 
       <div class="cta-row">
-        <a class="btn" href="https://github.com/McAelanRemigio/Rubin_Variable_Star_Workflow" target="_blank" rel="noopener">
+        <a
+          class="btn"
+          href="https://github.com/McAelanRemigio/Rubin_Variable_Star_Workflow"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View repository
         </a>
-        <a class="btn" href="projects.html">Back to projects</a>
+
+        <a class="btn" href="projects.html">
+          Back to projects
+        </a>
       </div>
     </section>
 
     <section class="section">
-      <h2>Outcomes</h2>
+      <h2>Research impact</h2>
 
-      <ul>
-        <li>
-          Built an end-to-end decision workflow that converts high-volume observational data
-          into a ranked, reviewable candidate shortlist.
-        </li>
-        <li>
-          Designed an interpretable scoring system to help prioritize which objects should receive
-          further inspection or follow-up analysis.
-        </li>
-        <li>
-          Produced reusable outputs for stakeholders, including ranked tables, saved artifacts,
-          model results, and documented assumptions.
-        </li>
-        <li>
-          Developed an initial classifier achieving ~94% accuracy, creating a scalable foundation
-          for triaging future catalog updates.
-        </li>
-        <li>
-          Documented the workflow for technical and non-technical audiences, emphasizing
-          repeatability, transparency, and decision usefulness.
-        </li>
-      </ul>
+      <div class="cards three">
+        <article class="card">
+          <h3>3.5 TB</h3>
+          <p>
+            Large-scale astronomical time-series data processed and analyzed
+            through computational research workflows.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>94%</h3>
+          <p>
+            Classification accuracy achieved by the initial variable star
+            classification model.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3 Researchers</h3>
+          <p>
+            Supervised three undergraduate researchers, supporting their
+            technical development and contributions to the research effort.
+          </p>
+        </article>
+      </div>
     </section>
 
     <figure class="figure">
       <img
         src="assets/confusion-matrix.png"
-        alt="Confusion matrix for variable star classification showing strong performance on LPVs and RR Lyrae"
+        alt="Confusion matrix showing the performance of the variable star classification model across astronomical object classes."
       />
+
       <figcaption>
-        Confusion matrix for the initial classification model. Beyond model performance, the key
-        value of this step was operational: creating a repeatable way to triage large volumes of
-        candidates and focus review effort where it is most useful.
+        Confusion matrix for the initial variable star classification model.
+        The evaluation provided insight into classification performance
+        across object classes and helped establish a foundation for
+        repeatable candidate identification.
       </figcaption>
     </figure>
 
     <section class="section two-col">
       <div>
-        <h2>Problem</h2>
+        <h2>The problem</h2>
+
         <p>
-          Large astronomical catalogs create a prioritization problem. Researchers cannot manually
-          inspect every object with equal attention, especially when observations are noisy,
-          incomplete, or updated at scale. The challenge was to turn raw catalog-level signals into
-          a structured decision process: which candidates should be reviewed first, why they ranked
-          highly, and how the process could be repeated as more data becomes available.
+          Large astronomical surveys generate enormous volumes of
+          observational data. Identifying variable stars within these
+          datasets requires researchers to distinguish meaningful
+          variability patterns from noise, incomplete observations,
+          and other sources of uncertainty.
         </p>
 
-        <h2>Approach</h2>
+        <p>
+          The challenge was not simply processing more data. It was
+          developing a reliable analytical approach to identify relevant
+          signals, extract useful features, and classify astronomical
+          objects in a way that could support further scientific
+          investigation.
+        </p>
+
+        <h2>Analytical approach</h2>
+
         <ul>
           <li>
-            Translated an open-ended research problem into a structured ranking and prioritization workflow.
+            Processed and explored large-scale astronomical time-series
+            datasets using Python-based analytical workflows.
           </li>
+
           <li>
-            Explored large-scale observational data to identify signals that could support candidate triage.
+            Conducted statistical exploratory data analysis to understand
+            observational patterns, distributions, and variability signals.
           </li>
+
           <li>
-            Engineered interpretable variability metrics that could be compared consistently across objects.
+            Applied feature engineering to extract meaningful characteristics
+            from time-series observations.
           </li>
+
           <li>
-            Combined metrics into a composite index to create a transparent prioritization framework.
+            Developed machine learning classification workflows to distinguish
+            variable star categories.
           </li>
+
           <li>
-            Added machine learning classification to support scalable review as additional catalog data becomes available.
+            Evaluated model performance using classification metrics and
+            confusion matrix analysis.
           </li>
+
           <li>
-            Packaged the workflow with documented assumptions, outputs, and scope boundaries for reuse by future researchers.
+            Organized analytical outputs and documented workflows to support
+            reproducibility and continued research.
           </li>
         </ul>
+
+        <h2>Research collaboration</h2>
+
+        <p>
+          Beyond the technical work, I supervised three undergraduate
+          researchers, helping coordinate analytical contributions and
+          support their development within the research environment.
+          This experience strengthened my ability to communicate technical
+          concepts, collaborate across experience levels, and contribute
+          to shared research objectives.
+        </p>
       </div>
 
       <aside class="sidebar">
-        <h2>Focus Areas</h2>
+        <h2>Research context</h2>
+
         <p class="meta">
-          Decision analytics · Prioritization systems · Product-style workflow design · Program analytics · Data operations
+          NSF-DOE Vera C. Rubin Observatory research program
+          <br />
+          May – July 2025
         </p>
 
-        <h2>Tools</h2>
+        <h2>Focus Areas</h2>
+
         <p class="meta">
-          Python · Pandas · NumPy · Jupyter · Scikit-learn · Statistical EDA · Feature engineering
+          Time-series analysis · Statistical exploration ·
+          Feature engineering · Machine learning ·
+          Classification · Reproducible workflows
+        </p>
+
+        <h2>Tools & Technologies</h2>
+
+        <p class="meta">
+          Python · Pandas · NumPy · Jupyter · Scikit-learn ·
+          Statistical analysis · Data visualization
         </p>
 
         <h2>Deliverables</h2>
+
         <ul>
-          <li>Decision pipeline</li>
-          <li>Ranked candidate shortlist</li>
-          <li>Composite scoring framework</li>
-          <li>Classification model</li>
-          <li>Reusable documentation</li>
+          <li>Time-series analysis workflows</li>
+          <li>Engineered analytical features</li>
+          <li>Variable star classification model</li>
+          <li>Model evaluation and confusion matrix</li>
+          <li>Documented research workflows</li>
         </ul>
       </aside>
     </section>
 
     <section class="section">
-      <h2>Why this matters</h2>
+      <h2>From scientific data to decision systems</h2>
+
       <p>
-        This project is less about astronomy alone and more about a transferable analytics pattern:
-        turning complex, noisy data into a repeatable decision system. The same structure applies to
-        strategy, operations, product, and program analytics contexts where teams need to prioritize
-        limited attention, explain recommendations, and create workflows that scale as new data arrives.
+        Although the application was astrophysics, the analytical
+        challenges are relevant across many industries. Large datasets
+        are often noisy, difficult to interpret, and too extensive for
+        manual review. Organizations face similar problems when
+        identifying patterns, evaluating opportunities, and deciding
+        where to direct limited resources.
+      </p>
+
+      <p>
+        This project reinforced an approach I bring to analytics more
+        broadly: build structured workflows, make analytical methods
+        interpretable, evaluate results rigorously, and turn complex
+        information into outputs that people can actually use.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Research experience that scales beyond research</h2>
+
+      <p class="lede narrow">
+        This experience helped develop my technical foundation in
+        large-scale data analysis, statistical modeling, and collaborative
+        problem-solving. Those capabilities continue to inform my work
+        in business analytics, strategy and operations, and applied
+        decision-support systems.
+      </p>
+
+      <p class="section-link">
+        <a href="projects.html">Explore more projects →</a>
       </p>
     </section>
   </main>
